@@ -8,8 +8,8 @@ import java.util.Set;
 public class HashSet {
 	public static void main(String[] args) {
 		
-		List<Integer> g = new ArrayList<Integer>();
-
+		List<Object> g = new ArrayList<Object>();
+        g.add("ghffgfgfgfg");
 		g.add(60);
 		g.add(88);
 		g.add(65);
@@ -30,14 +30,14 @@ public class HashSet {
 		System.out.println("----------------");	
 			
 			}
-		for (Integer jet : g) {
+		for (Object jet : g) {
 			System.out.println(jet);
 			
 			System.out.println("-------------");
 			
 		}
 		
-		Set<Integer> b = new LinkedHashSet<Integer>();
+		Set<Object> b = new LinkedHashSet<Object>();
 		b.addAll(g);
 System.out.println(b);
 		
